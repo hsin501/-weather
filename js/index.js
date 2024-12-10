@@ -4,7 +4,7 @@ const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
 // 獲取和渲染天氣數據
 function getWeather(cityCode) {
   myAxios({
-    url: 'http://hmajax.itheima.net/api/weather',
+    url: 'https://cors-anywhere.herokuapp.com/http://hmajax.itheima.net/api/weather',
     params: {
       city: cityCode,
     },
